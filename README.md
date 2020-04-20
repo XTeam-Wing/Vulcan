@@ -1,25 +1,63 @@
-# FengYin
-风吟资产管理系统|漏洞扫描|资产探测|定时扫描
-
-还有最后的收尾工作为完成,会再完善子域名监控这一模块,我的idea很简单,celery设置定时,一周执行一次,新资产入库就触发提示,简单的端口扫描结果发送到钉钉.
-
-之前做的一部分脑图
-![且听风吟](https://redteamwing.oss-cn-hongkong.aliyuncs.com/2020/02/04/qie-ting-feng-yin.png?image/auto-orient,1/quality,q_90)
-
-UI展示:
-![](https://redteamwing.oss-cn-hongkong.aliyuncs.com/2020/02/04/15808211847956.jpg?image/auto-orient,1/quality,q_90)
+# Vulcan
+<center>
+<img src="media/zhuque2.png" width="200px" />
 
 
-![](https://redteamwing.oss-cn-hongkong.aliyuncs.com/2020/02/04/15808212272984.jpg?image/auto-orient,1/quality,q_90)
+![](https://img.shields.io/badge/Python3.7-Vue-brightgreen)![](https://img.shields.io/badge/Celery-MongoDB-yellow)![](https://img.shields.io/badge/定时执行-分布式-blue)![https://twitter.com/RedTeamWing](https://img.shields.io/badge/Twitter-RedTeamWing-red)![](https://img.shields.io/badge/Weibo-RedTeamWing-green)
 
-![](https://redteamwing.oss-cn-hongkong.aliyuncs.com/2020/02/04/15808212852720.jpg?image/auto-orient,1/quality,q_90)
+</center>
 
-![](https://redteamwing.oss-cn-hongkong.aliyuncs.com/2020/02/04/15808213479608.jpg?image/auto-orient,1/quality,q_90)
 
-![](https://redteamwing.oss-cn-hongkong.aliyuncs.com/2020/02/04/15808213738584.jpg?image/auto-orient,1/quality,q_90)
 
-![](https://redteamwing.oss-cn-hongkong.aliyuncs.com/2020/02/04/15808214055090.jpg?image/auto-orient,1/quality,q_90)
+[TOC]
 
-未完成模块:
-- httplog&xss&dnslog 
-- 还没想到
+## Background
+
+这应该是我的第一个扫描器,也是为了毕业设计而写的,公开的扫描器没有我想要的,只好自己写了,项目是采用前后端分离开发,要谢谢开发Fuxi的师傅,我跟他要了前端的源码进行学习,临时学了一下Vue,然后借助ANT框架开发UI,上手比较轻松.POCSCAN模块是借鉴Fuxi的方法,XD.
+
+## install
+pass
+## Usage
+
+```bash
+start mongo
+start redis
+sudo python3 vulcan.py
+sudo celery worker -P threads -A celerywing.tasks -B -E  --loglevel=info
+```
+
+## Func
+- 子域名收集模块
+- 主动扫描模块
+- 被动扫描模块(crawlergo+xray+dircrack)
+- 定时扫描模块
+- 钉钉实时告警模块
+
+## UI
+![-w1786](media/15873711578318.jpg)
+
+![-w1791](media/15873711943785.jpg)
+
+![-w1791](media/15873712281811.jpg)
+
+![-w1778](media/15873712454377.jpg)
+
+![-w1791](media/15873712616514.jpg)
+
+
+
+![-w1791](media/15873712878398.jpg)
+
+![-w1791](media/15873712998591.jpg)
+
+![-w1791](media/15873713265929.jpg)
+
+![-w1791](media/15873713481580.jpg)
+
+![-w1791](media/15873713760082.jpg)
+
+![-w1790](media/15873713892332.jpg)
+
+Tools模块是一些在线小工具,文本去重等等(还没写)
+
+测试稳定性之后再考虑开源.
