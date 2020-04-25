@@ -14,6 +14,7 @@
 
 
 [TOC]
+> 【+】PS:我想找几个小伙伴一起维护Vulcan的POCScan功能,只要新的CVE出现就写成Pocsuite3格式的插件,加入到漏洞库当中,需要日积月累才能有自己的"军火库",提交Poc的小伙伴可以一起来内测,我想不断完善Vulcan的功能,更好的实现自动化. Email:RedTeamWing#gmail.com
 
 ## Background
 
