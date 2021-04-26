@@ -2,18 +2,38 @@
 <center>
 <img src="media/zhuque2.png" width="200px" />
 
+</center>
 
+<center>
 ![](https://img.shields.io/badge/Python3.7-Vue-brightgreen)
 ![](https://img.shields.io/badge/Celery-MongoDB-yellow)
 ![](https://img.shields.io/badge/定时执行-分布式-blue)
 ![https://twitter.com/RedTeamWing](https://img.shields.io/badge/Twitter-RedTeamWing-red)
 ![](https://img.shields.io/badge/Weibo-RedTeamWing-green)
-
 </center>
 
 
+> 2021.4.26更新说明：疫情期间在家无聊，然后又相当于应付一下毕设，学习了fuxi和其他的一个叫啥来着的，记不清楚了。代码小学生水平。
+> 他的不足之处有很多点，我通过2.0版本的新功能来进行对比。
 
-[TOC]
+**2.0新增功能**
+
+- 2.0和1.0没有半毛钱关系，前端和后端从0重写
+- 数据库改为mysql（我觉得mysql好用一些）
+- Web和节点单独部署，一键Docker启动
+- 指纹识别使用内置规则，不依赖其他的api，省得麻烦，一定一定要有自己的指纹库
+- pocsuite3永远滴神，虽然现在yaml格式的poc很多了，但是pocsuite3带有攻击模块，poc写好以后，HW用起来很方便
+- 新增目录扫描
+- 漏洞扫描和资产识别分开，资产更加重要
+- 任务可以同时添加子域名和任意ip以及二级域名
+- 核心功能模块化
+
+2.0 应该不会open了，用了半年，提效还是很爽的。
+
+
+
+
+
 > 【+】PS:我想找几个小伙伴一起维护Vulcan的POCScan功能,只要新的CVE出现就写成Pocsuite3格式的插件,加入到漏洞库当中,需要日积月累才能有自己的"军火库",提交Poc的小伙伴可以一起来内测,我想不断完善Vulcan的功能,更好的实现自动化. Email:RedTeamWing#gmail.com
 
 ## Background
