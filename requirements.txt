@@ -10,7 +10,7 @@ Flask==1.1.1
 cloudscraper==1.2.16
 urllib3==1.25.3
 Flask_RESTful==0.3.8
-aiohttp==3.6.2
+aiohttp==3.7.4
 tldextract==2.2.2
 celery==4.4.2
 Flask_Cors==3.0.8
