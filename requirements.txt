@@ -13,7 +13,7 @@ Flask_RESTful==0.3.8
 aiohttp==3.6.2
 tldextract==2.2.2
 celery==4.4.2
-Flask_Cors==3.0.8
+Flask_Cors==3.0.9
 simplejson==3.17.0
 fire==0.2.1
 aiomultiprocess==0.7.0
