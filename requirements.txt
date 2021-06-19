@@ -8,7 +8,7 @@ shodan==1.21.3
 loguru==0.4.0
 Flask==1.1.1
 cloudscraper==1.2.16
-urllib3==1.25.3
+urllib3==1.26.5
 Flask_RESTful==0.3.8
 aiohttp==3.6.2
 tldextract==2.2.2
