@@ -12,7 +12,7 @@ urllib3==1.26.5
 Flask_RESTful==0.3.8
 aiohttp==3.6.2
 tldextract==2.2.2
-celery==4.4.2
+celery==5.2.2
 Flask_Cors==3.0.8
 simplejson==3.17.0
 fire==0.2.1
